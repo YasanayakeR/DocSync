@@ -10,10 +10,12 @@ import Myappionments from './pages/Myappionments'
 import Appoinment from './pages/Appoinment'
 import Navbar from './components/Navbar'
 
+
 const App = () => {
   return (
     <div className='mx-4 sm:mx-[10%]'>
      <Navbar></Navbar>
+   
      <Routes>
       <Route path='/' element ={<Home/>}></Route>
       <Route path='/login' element ={<Login/>}></Route>
@@ -24,7 +26,7 @@ const App = () => {
       <Route path='/myappoinments' element ={<Myappionments/>}></Route>
       <Route path='/appoinment/:docId' element ={<Appoinment/>}></Route>
      </Routes>
-    </div>
+     </div>
   )
 }
 
